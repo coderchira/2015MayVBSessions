@@ -18,6 +18,8 @@
         '               Assign/Use
         '               Dispose
         '           Constants -- they do not change their value
+        LogicDemo.DoThisAsWell()
+        LogicDemo.var = 12
 
         'Native type
         'Declare a variable
