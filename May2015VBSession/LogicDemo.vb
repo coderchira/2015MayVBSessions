@@ -23,7 +23,7 @@
         'body of the function
         'Call a sub
         'DoThisAsWell()
-        Dim rtr As Boolean 'Logic block variable and scope is limited to this function
+        'Dim rtr As Boolean 'Logic block variable and scope is limited to this function
         modVar = 20
         Return 0
     End Function
@@ -112,7 +112,7 @@
         'While Loop
         While num >= 10
             'Do something
-            Console.WriteLine("The number value is " & num")
+            Console.WriteLine("The number value is " & num)
             num = num - 1
         End While
 

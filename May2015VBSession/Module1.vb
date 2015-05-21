@@ -18,6 +18,7 @@
         '               Assign/Use
         '               Dispose
         '           Constants -- they do not change their value
+        CollectionExercise.ExerciseSolution()
         LogicDemo.DoThisAsWell()
         LogicDemo.var = 12
 
