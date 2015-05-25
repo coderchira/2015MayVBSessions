@@ -19,11 +19,12 @@
         '               Dispose
         '           Constants -- they do not change their value
 
+        'Day3
         'Base class instantiation
         Dim obj As New Animal
         ''obj.setName("SomeAnimal")
         ''Console.WriteLine(obj.getName())
-        'obj.Name = "SomeAnimal"
+        obj.Name = "SomeAnimal"
         Console.WriteLine(obj.Name)
         Console.ReadLine()
 
@@ -32,29 +33,45 @@
 
         'Child class instantiation
         Dim dogObj As New Dog
-        'dogObj.Jump()
-        'dogObj.Breed = "German Shephard"
-        'dogObj.Name = "Bosco"
+        dogObj.Jump()
+        dogObj.Breed = "German Shepherd"
+        dogObj.Name = "Bosco"
         dogObj.Walk()
         dogObj.MakeSound()
-        'Console.WriteLine(dogObj.Name)
-        'Console.WriteLine(dogObj.Breed)
+        Console.WriteLine(dogObj.Name)
+        Console.WriteLine(dogObj.Breed)
         Console.ReadLine()
 
         'Creating a variable/ handle of the base class
         Dim animalObj As Animal
         'Instantiating an object of child / specific class
-        animalObj = New Dog
-        '  animalObj = CType(animalObj, Dog)
+        animalObj = New Dog ' is fine
+        animalObj.MakeSound()
+        animalObj.Walk()
+        Console.ReadLine()
 
-        'Handle of the child class
+        'Creating variable/Handle of the child class
         'Dim dogObj2 As Dog
-        'dogObj2 = New Animal 'illegal
+        'Instantiating an object of base class 
+        'dogObj2 = New Animal ' is illegal
 
+        'Conversion of object types (Upcasting and downcasting)
+        'Declared and used as child class object
+        Dim dogobj3 As Dog
+        dogobj3 = New Dog
+        dogobj3 = CType(dogobj3, Animal) ' conversion of dog object to animal(child to parent / upcasting) works fine
+        dogobj3.Breed = "BloodHound"
+
+        'Dim animalObj2 As Animal
+        'animalObj2 = New Animal
+        'animalObj2 = CType(animalObj2, Dog) 'InvalidCastException Cannot convert parent object to child class object(downcasting)
+
+        'Day 2
         CollectionExercise.ExerciseSolution()
         LogicDemo.DoThisAsWell()
         LogicDemo.var = 12
 
+        'Day 1
         'Native type
         'Declare a variable
         Dim flag As Boolean '2 bytes
