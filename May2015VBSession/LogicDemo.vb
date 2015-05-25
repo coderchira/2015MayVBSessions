@@ -19,6 +19,7 @@
     'Dim is Private
     'Access Modifiers 
     Public var As Integer
+
     Function DoThis() As Integer
         'body of the function
         'Call a sub

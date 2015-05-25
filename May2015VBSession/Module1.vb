@@ -18,6 +18,39 @@
         '               Assign/Use
         '               Dispose
         '           Constants -- they do not change their value
+
+        'Base class instantiation
+        Dim obj As New Animal
+        ''obj.setName("SomeAnimal")
+        ''Console.WriteLine(obj.getName())
+        'obj.Name = "SomeAnimal"
+        Console.WriteLine(obj.Name)
+        Console.ReadLine()
+
+        Dim anotherObj As Animal
+        anotherObj = New Animal("NewAnimal")
+
+        'Child class instantiation
+        Dim dogObj As New Dog
+        'dogObj.Jump()
+        'dogObj.Breed = "German Shephard"
+        'dogObj.Name = "Bosco"
+        dogObj.Walk()
+        dogObj.MakeSound()
+        'Console.WriteLine(dogObj.Name)
+        'Console.WriteLine(dogObj.Breed)
+        Console.ReadLine()
+
+        'Creating a variable/ handle of the base class
+        Dim animalObj As Animal
+        'Instantiating an object of child / specific class
+        animalObj = New Dog
+        '  animalObj = CType(animalObj, Dog)
+
+        'Handle of the child class
+        'Dim dogObj2 As Dog
+        'dogObj2 = New Animal 'illegal
+
         CollectionExercise.ExerciseSolution()
         LogicDemo.DoThisAsWell()
         LogicDemo.var = 12
